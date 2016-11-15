@@ -15,6 +15,8 @@
 		C3C1BA121DD98F3900E9A027 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C1BA101DD98F3900E9A027 /* LaunchScreen.storyboard */; };
 		C3C1BA1D1DD98F3900E9A027 /* FFChannelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1BA1C1DD98F3900E9A027 /* FFChannelDemoTests.m */; };
 		C3C1BA281DD98F3900E9A027 /* FFChannelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1BA271DD98F3900E9A027 /* FFChannelDemoUITests.m */; };
+		C3C1BA461DD9901300E9A027 /* FFChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1BA421DD9901300E9A027 /* FFChannelView.m */; };
+		C3C1BA4B1DD9905A00E9A027 /* FFRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1BA4A1DD9905A00E9A027 /* FFRootView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		C3C1BA231DD98F3900E9A027 /* FFChannelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFChannelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C1BA271DD98F3900E9A027 /* FFChannelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFChannelDemoUITests.m; sourceTree = "<group>"; };
 		C3C1BA291DD98F3900E9A027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C1BA411DD9901300E9A027 /* FFChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFChannelView.h; sourceTree = "<group>"; };
+		C3C1BA421DD9901300E9A027 /* FFChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFChannelView.m; sourceTree = "<group>"; };
+		C3C1BA491DD9905A00E9A027 /* FFRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFRootView.h; sourceTree = "<group>"; };
+		C3C1BA4A1DD9905A00E9A027 /* FFRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFRootView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		C3C1BA011DD98F3900E9A027 /* FFChannelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C3C1BA361DD98F9000E9A027 /* Channel */,
 				C3C1BA051DD98F3900E9A027 /* AppDelegate.h */,
 				C3C1BA061DD98F3900E9A027 /* AppDelegate.m */,
 				C3C1BA081DD98F3900E9A027 /* ViewController.h */,
@@ -138,6 +145,18 @@
 				C3C1BA291DD98F3900E9A027 /* Info.plist */,
 			);
 			path = FFChannelDemoUITests;
+			sourceTree = "<group>";
+		};
+		C3C1BA361DD98F9000E9A027 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				C3C1BA491DD9905A00E9A027 /* FFRootView.h */,
+				C3C1BA4A1DD9905A00E9A027 /* FFRootView.m */,
+				C3C1BA411DD9901300E9A027 /* FFChannelView.h */,
+				C3C1BA421DD9901300E9A027 /* FFChannelView.m */,
+			);
+			name = Channel;
+			path = channel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +293,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C1BA0A1DD98F3900E9A027 /* ViewController.m in Sources */,
+				C3C1BA4B1DD9905A00E9A027 /* FFRootView.m in Sources */,
 				C3C1BA071DD98F3900E9A027 /* AppDelegate.m in Sources */,
+				C3C1BA461DD9901300E9A027 /* FFChannelView.m in Sources */,
 				C3C1BA041DD98F3900E9A027 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
